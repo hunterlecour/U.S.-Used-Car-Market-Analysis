@@ -1,7 +1,6 @@
 # U.S. Used-Toyota Market Analysis  
 **Masters in Applied Business Analytics – Final Project**  
-**Tech Stack:** R (tidyverse, lubridate, ggplot2, caret, forecast, cluster)  
-**Team Members:** Natira Riddick, Luis Del Prado Guevara, Hunter Lecour, Joseph Tattegrainn  
+**Tech Stack:** R (tidyverse, lubridate, ggplot2, caret, forecast, cluster)   
 
 ---
 
