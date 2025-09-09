@@ -103,7 +103,7 @@ This project examined the U.S. used-Toyota vehicle market to:
   - `analysis.R` (original R script)  
   - `analysis_notebook.ipynb` (Jupyter notebook with the same R code, using IRkernel).  
 - Visuals are reproduced in the notebook and expanded into a Tableau dashboard.  
-- Tableau Public dashboard link (interactive): [Insert Link Here]  
+- Tableau Public dashboard link (interactive): [https://public.tableau.com/views/UsedCarMarketAnalysis_17574407224210/UsedToyotaMarketAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]  
 - To reproduce locally:  
   - Run either the R script or the notebook (R kernel required).  
   - Use the provided CSV datasets. 

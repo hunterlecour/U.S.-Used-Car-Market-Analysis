@@ -1,0 +1,2452 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='avg_price_by_state' inline='true' name='federated.19zj9fc0thxqms1ccbv9r18fau54' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='avg_price_by_state' name='textscan.08z8zcm1hyxlku182m81109ndhv1'>
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='avg_price_by_state.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.08z8zcm1hyxlku182m81109ndhv1' name='avg_price_by_state.csv' table='[avg_price_by_state#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='real' name='avg_price' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[avg_price_by_state.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[avg_price_by_state.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[avg_price_by_state.csv_B4998A72E3124FD18DFAC5C26774C7E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_price]</local-name>
+            <parent-name>[avg_price_by_state.csv]</parent-name>
+            <remote-alias>avg_price</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[avg_price_by_state.csv_B4998A72E3124FD18DFAC5C26774C7E4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='avg_price_by_state.csv' datatype='table' name='[__tableau_internal_object_id__].[avg_price_by_state.csv_B4998A72E3124FD18DFAC5C26774C7E4]' role='measure' type='quantitative' />
+      <column caption='Avg Price' datatype='real' default-format='c&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' name='[avg_price]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_0mrkwk91grmfz41b83ya30pvof2a.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:20:39 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>0</ordinal>
+              <family>avg_price_by_state.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_price</remote-alias>
+              <ordinal>1</ordinal>
+              <family>avg_price_by_state.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='avg_price_by_state.csv' id='avg_price_by_state.csv_B4998A72E3124FD18DFAC5C26774C7E4'>
+            <properties context=''>
+              <relation connection='textscan.08z8zcm1hyxlku182m81109ndhv1' name='avg_price_by_state.csv' table='[avg_price_by_state#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='state' ordinal='0' />
+                  <column datatype='real' name='avg_price' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='top_models' inline='true' name='federated.0q5cz5405sbxla19jnggt07687de' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='top_models' name='textscan.1drvrl604v8rzp1argyjk0y8ht81'>
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='top_models.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1drvrl604v8rzp1argyjk0y8ht81' name='top_models.csv' table='[top_models#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='model' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[top_models.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[model]</local-name>
+            <parent-name>[top_models.csv]</parent-name>
+            <remote-alias>model</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[top_models.csv_640EE6DFDC2D43A1923B13533409280D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[top_models.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_models.csv_640EE6DFDC2D43A1923B13533409280D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='top_models.csv' datatype='table' name='[__tableau_internal_object_id__].[top_models.csv_640EE6DFDC2D43A1923B13533409280D]' role='measure' type='quantitative' />
+      <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_1jclo5r1x5i4u21girbmo1ekqpzf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:28:05 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model</remote-alias>
+              <ordinal>0</ordinal>
+              <family>top_models.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>top_models.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='top_models.csv' id='top_models.csv_640EE6DFDC2D43A1923B13533409280D'>
+            <properties context=''>
+              <relation connection='textscan.1drvrl604v8rzp1argyjk0y8ht81' name='top_models.csv' table='[top_models#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='model' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='body_type_counts' inline='true' name='federated.0icee4v1bvothx1g98rwz13ysb0i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='body_type_counts' name='textscan.0ksr204137jhnf17h174z1oi01km'>
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='body_type_counts.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ksr204137jhnf17h174z1oi01km' name='body_type_counts.csv' table='[body_type_counts#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='body' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[body_type_counts.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[body_type_counts.csv]</parent-name>
+            <remote-alias>body</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[body_type_counts.csv_029751F62C80407784D5964320A16BF2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[body_type_counts.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[body_type_counts.csv_029751F62C80407784D5964320A16BF2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='body_type_counts.csv' datatype='table' name='[__tableau_internal_object_id__].[body_type_counts.csv_029751F62C80407784D5964320A16BF2]' role='measure' type='quantitative' />
+      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_08bh3bu1xoqnlx1deldrb16ihv4f.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:36:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>body</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[body]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>body</remote-alias>
+              <ordinal>0</ordinal>
+              <family>body_type_counts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>body_type_counts.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='body_type_counts.csv' id='body_type_counts.csv_029751F62C80407784D5964320A16BF2'>
+            <properties context=''>
+              <relation connection='textscan.0ksr204137jhnf17h174z1oi01km' name='body_type_counts.csv' table='[body_type_counts#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='body' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='price_vs_odometer' inline='true' name='federated.0mghwcs16pszro17lokwf19ajzes' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='price_vs_odometer' name='textscan.0g7ookr15nzuzk1el4ksy03zqn7w'>
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='price_vs_odometer.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0g7ookr15nzuzk1el4ksy03zqn7w' name='price_vs_odometer.csv' table='[price_vs_odometer#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='make' ordinal='1' />
+            <column datatype='string' name='model' ordinal='2' />
+            <column datatype='string' name='trim' ordinal='3' />
+            <column datatype='string' name='body' ordinal='4' />
+            <column datatype='string' name='transmission' ordinal='5' />
+            <column datatype='string' name='vin' ordinal='6' />
+            <column datatype='string' name='state' ordinal='7' />
+            <column datatype='integer' name='condition' ordinal='8' />
+            <column datatype='integer' name='odometer' ordinal='9' />
+            <column datatype='string' name='color' ordinal='10' />
+            <column datatype='string' name='interior' ordinal='11' />
+            <column datatype='string' name='seller' ordinal='12' />
+            <column datatype='integer' name='mmr' ordinal='13' />
+            <column datatype='integer' name='sellingprice' ordinal='14' />
+            <column datatype='datetime' name='saledate' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>make</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[make]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>make</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[model]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>model</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trim</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trim]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>trim</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>body</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transmission</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transmission]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>transmission</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[vin]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>vin</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[condition]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>condition</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>odometer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[odometer]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>odometer</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[color]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>color</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>interior</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[interior]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>interior</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seller</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[seller]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>seller</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mmr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mmr]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>mmr</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sellingprice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sellingprice]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>sellingprice</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>saledate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[saledate]</local-name>
+            <parent-name>[price_vs_odometer.csv]</parent-name>
+            <remote-alias>saledate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='price_vs_odometer.csv' datatype='table' name='[__tableau_internal_object_id__].[price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831]' role='measure' type='quantitative' />
+      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+      <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+      <column caption='Condition' datatype='integer' name='[condition]' role='measure' type='quantitative' />
+      <column caption='Interior' datatype='string' name='[interior]' role='dimension' type='nominal' />
+      <column caption='Make' datatype='string' name='[make]' role='dimension' type='nominal' />
+      <column caption='Mmr' datatype='integer' name='[mmr]' role='measure' type='quantitative' />
+      <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
+      <column caption='Odometer' datatype='integer' name='[odometer]' role='measure' type='quantitative' />
+      <column caption='Saledate' datatype='datetime' name='[saledate]' role='dimension' type='ordinal' />
+      <column caption='Seller' datatype='string' name='[seller]' role='dimension' type='nominal' />
+      <column caption='Sellingprice' datatype='integer' name='[sellingprice]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Transmission' datatype='string' name='[transmission]' role='dimension' type='nominal' />
+      <column caption='Trim' datatype='string' name='[trim]' role='dimension' type='nominal' />
+      <column caption='Vin' datatype='string' name='[vin]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_0fyh2zh06749dy1alc2dq1l6fqej.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:44:18 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>make</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[make]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>make</remote-alias>
+              <ordinal>1</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model</remote-alias>
+              <ordinal>2</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trim</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trim]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trim</remote-alias>
+              <ordinal>3</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>body</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[body]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>body</remote-alias>
+              <ordinal>4</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transmission</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transmission]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transmission</remote-alias>
+              <ordinal>5</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vin</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[vin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vin</remote-alias>
+              <ordinal>6</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38351</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>7</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>condition</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>condition</remote-alias>
+              <ordinal>8</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>odometer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[odometer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>odometer</remote-alias>
+              <ordinal>9</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30852</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[color]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>color</remote-alias>
+              <ordinal>10</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>interior</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[interior]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>interior</remote-alias>
+              <ordinal>11</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seller</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[seller]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>seller</remote-alias>
+              <ordinal>12</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2391</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mmr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[mmr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mmr</remote-alias>
+              <ordinal>13</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1568</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sellingprice</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sellingprice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sellingprice</remote-alias>
+              <ordinal>14</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>717</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>saledate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[saledate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>saledate</remote-alias>
+              <ordinal>15</ordinal>
+              <family>price_vs_odometer.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1776</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='price_vs_odometer.csv' id='price_vs_odometer.csv_FCA06807A46E4B74AD591F350A06D831'>
+            <properties context=''>
+              <relation connection='textscan.0g7ookr15nzuzk1el4ksy03zqn7w' name='price_vs_odometer.csv' table='[price_vs_odometer#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='make' ordinal='1' />
+                  <column datatype='string' name='model' ordinal='2' />
+                  <column datatype='string' name='trim' ordinal='3' />
+                  <column datatype='string' name='body' ordinal='4' />
+                  <column datatype='string' name='transmission' ordinal='5' />
+                  <column datatype='string' name='vin' ordinal='6' />
+                  <column datatype='string' name='state' ordinal='7' />
+                  <column datatype='integer' name='condition' ordinal='8' />
+                  <column datatype='integer' name='odometer' ordinal='9' />
+                  <column datatype='string' name='color' ordinal='10' />
+                  <column datatype='string' name='interior' ordinal='11' />
+                  <column datatype='string' name='seller' ordinal='12' />
+                  <column datatype='integer' name='mmr' ordinal='13' />
+                  <column datatype='integer' name='sellingprice' ordinal='14' />
+                  <column datatype='datetime' name='saledate' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='avg_price_over_time' inline='true' name='federated.13nirr30e6u8tn146vy2a0z16ume' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='avg_price_over_time' name='textscan.1iv80gs1ca0d4i15p7csi0ck6wap'>
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='avg_price_over_time.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1iv80gs1ca0d4i15p7csi0ck6wap' name='avg_price_over_time.csv' table='[avg_price_over_time#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='month' ordinal='0' />
+            <column datatype='real' name='avg_price' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[avg_price_over_time.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[avg_price_over_time.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[avg_price_over_time.csv_30C4956DB4124B6C93F522683AE7393D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_price]</local-name>
+            <parent-name>[avg_price_over_time.csv]</parent-name>
+            <remote-alias>avg_price</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[avg_price_over_time.csv_30C4956DB4124B6C93F522683AE7393D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='avg_price_over_time.csv' datatype='table' name='[__tableau_internal_object_id__].[avg_price_over_time.csv_30C4956DB4124B6C93F522683AE7393D]' role='measure' type='quantitative' />
+      <column caption='Avg Price' datatype='real' name='[avg_price]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_1b9zwux19n70yp1bo318q0khr5dr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:58:13 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>0</ordinal>
+              <family>avg_price_over_time.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_price</remote-alias>
+              <ordinal>1</ordinal>
+              <family>avg_price_over_time.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='avg_price_over_time.csv' id='avg_price_over_time.csv_30C4956DB4124B6C93F522683AE7393D'>
+            <properties context=''>
+              <relation connection='textscan.1iv80gs1ca0d4i15p7csi0ck6wap' name='avg_price_over_time.csv' table='[avg_price_over_time#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='month' ordinal='0' />
+                  <column datatype='real' name='avg_price' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='condition_raw' inline='true' name='federated.0oc4rin0chyyou1b3q53k0xphmgh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='condition_raw' name='textscan.1aqbolf0vy5poz1h50udi1rx6k5d'>
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='condition_raw.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1aqbolf0vy5poz1h50udi1rx6k5d' name='condition_raw.csv' table='[condition_raw#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US'>
+            <column datatype='integer' name='condition' ordinal='0' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[condition_raw.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[condition]</local-name>
+            <parent-name>[condition_raw.csv]</parent-name>
+            <remote-alias>condition</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[condition_raw.csv_B4B024C2B27242ED86C0AB6C69994DBC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='condition_raw.csv' datatype='table' name='[__tableau_internal_object_id__].[condition_raw.csv_B4B024C2B27242ED86C0AB6C69994DBC]' role='measure' type='quantitative' />
+      <column caption='Condition' datatype='integer' datatype-customized='true' name='[condition]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_1japn9i0t1tlkx18tfspg09nw07m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 05:17:38 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>condition</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>condition</remote-alias>
+              <ordinal>0</ordinal>
+              <family>condition_raw.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='condition_raw.csv' id='condition_raw.csv_B4B024C2B27242ED86C0AB6C69994DBC'>
+            <properties context=''>
+              <relation connection='textscan.1aqbolf0vy5poz1h50udi1rx6k5d' name='condition_raw.csv' table='[condition_raw#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US'>
+                  <column datatype='integer' name='condition' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='price_by_body_raw' inline='true' name='federated.1duxn0t15164qv155e5tm1wi9bue' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='price_by_body_raw' name='textscan.0n5ff5502c68ug110gyhn11vakyn'>
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='price_by_body_raw.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0n5ff5502c68ug110gyhn11vakyn' name='price_by_body_raw.csv' table='[price_by_body_raw#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='body' ordinal='0' />
+            <column datatype='integer' name='sellingprice' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[price_by_body_raw.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[price_by_body_raw.csv]</parent-name>
+            <remote-alias>body</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[price_by_body_raw.csv_3CAD798176154BCABB52FBCFE1570CE0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sellingprice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sellingprice]</local-name>
+            <parent-name>[price_by_body_raw.csv]</parent-name>
+            <remote-alias>sellingprice</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[price_by_body_raw.csv_3CAD798176154BCABB52FBCFE1570CE0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='price_by_body_raw.csv' datatype='table' name='[__tableau_internal_object_id__].[price_by_body_raw.csv_3CAD798176154BCABB52FBCFE1570CE0]' role='measure' type='quantitative' />
+      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+      <column caption='Sellingprice' datatype='integer' name='[sellingprice]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_02aeo4f1wgx71i1eggzk00tma07g.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 05:32:46 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>body</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[body]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>body</remote-alias>
+              <ordinal>0</ordinal>
+              <family>price_by_body_raw.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sellingprice</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sellingprice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sellingprice</remote-alias>
+              <ordinal>1</ordinal>
+              <family>price_by_body_raw.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>767</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='price_by_body_raw.csv' id='price_by_body_raw.csv_3CAD798176154BCABB52FBCFE1570CE0'>
+            <properties context=''>
+              <relation connection='textscan.0n5ff5502c68ug110gyhn11vakyn' name='price_by_body_raw.csv' table='[price_by_body_raw#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='body' ordinal='0' />
+                  <column datatype='integer' name='sellingprice' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='clusters_rowlevel' inline='true' name='federated.1imy4s20281bid13aj6cj0fkxyxn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clusters_rowlevel' name='textscan.1c4k5jy101x59k1aqk6d518dy46u'>
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='clusters_rowlevel.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1c4k5jy101x59k1aqk6d518dy46u' name='clusters_rowlevel.csv' table='[clusters_rowlevel#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='integer' name='odometer' ordinal='1' />
+            <column datatype='integer' name='sellingprice' ordinal='2' />
+            <column datatype='integer' name='condition' ordinal='3' />
+            <column datatype='string' name='body' ordinal='4' />
+            <column datatype='string' name='model' ordinal='5' />
+            <column datatype='string' name='state' ordinal='6' />
+            <column datatype='integer' name='cluster' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clusters_rowlevel.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[clusters_rowlevel.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>odometer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[odometer]</local-name>
+            <parent-name>[clusters_rowlevel.csv]</parent-name>
+            <remote-alias>odometer</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sellingprice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sellingprice]</local-name>
+            <parent-name>[clusters_rowlevel.csv]</parent-name>
+            <remote-alias>sellingprice</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[condition]</local-name>
+            <parent-name>[clusters_rowlevel.csv]</parent-name>
+            <remote-alias>condition</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[clusters_rowlevel.csv]</parent-name>
+            <remote-alias>body</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[model]</local-name>
+            <parent-name>[clusters_rowlevel.csv]</parent-name>
+            <remote-alias>model</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[clusters_rowlevel.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cluster]</local-name>
+            <parent-name>[clusters_rowlevel.csv]</parent-name>
+            <remote-alias>cluster</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='clusters_rowlevel.csv' datatype='table' name='[__tableau_internal_object_id__].[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]' role='measure' type='quantitative' />
+      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+      <column caption='Cluster' datatype='integer' name='[cluster]' role='measure' type='quantitative' />
+      <column caption='Condition' datatype='integer' name='[condition]' role='measure' type='quantitative' />
+      <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
+      <column caption='Odometer' datatype='integer' name='[odometer]' role='measure' type='quantitative' />
+      <column caption='Sellingprice' datatype='integer' name='[sellingprice]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_07qy8no0etxt0d1d70pff0doz6bx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 05:33:48 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>clusters_rowlevel.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>odometer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[odometer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>odometer</remote-alias>
+              <ordinal>1</ordinal>
+              <family>clusters_rowlevel.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30926</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sellingprice</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sellingprice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sellingprice</remote-alias>
+              <ordinal>2</ordinal>
+              <family>clusters_rowlevel.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>847</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>condition</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>condition</remote-alias>
+              <ordinal>3</ordinal>
+              <family>clusters_rowlevel.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>body</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[body]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>body</remote-alias>
+              <ordinal>4</ordinal>
+              <family>clusters_rowlevel.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model</remote-alias>
+              <ordinal>5</ordinal>
+              <family>clusters_rowlevel.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>6</ordinal>
+              <family>clusters_rowlevel.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cluster</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cluster]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cluster</remote-alias>
+              <ordinal>7</ordinal>
+              <family>clusters_rowlevel.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='clusters_rowlevel.csv' id='clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845'>
+            <properties context=''>
+              <relation connection='textscan.1c4k5jy101x59k1aqk6d518dy46u' name='clusters_rowlevel.csv' table='[clusters_rowlevel#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='integer' name='odometer' ordinal='1' />
+                  <column datatype='integer' name='sellingprice' ordinal='2' />
+                  <column datatype='integer' name='condition' ordinal='3' />
+                  <column datatype='string' name='body' ordinal='4' />
+                  <column datatype='string' name='model' ordinal='5' />
+                  <column datatype='string' name='state' ordinal='6' />
+                  <column datatype='integer' name='cluster' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Body Types – Listings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Toyota Listings by Body Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='body_type_counts' name='federated.0icee4v1bvothx1g98rwz13ysb0i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0icee4v1bvothx1g98rwz13ysb0i'>
+            <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+            <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+            <column-instance column='[body]' derivation='None' name='[none:body:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n]' derivation='Sum' name='[sum:n:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0icee4v1bvothx1g98rwz13ysb0i].[none:body:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:body:nk]' member='%null%' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Access Cab&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Convertible&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Coupe&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Crewmax Cab&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Double Cab&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Extended Cab&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Hatchback&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Minivan&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Regular Cab&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Sedan&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Suv&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Wagon&quot;' />
+              <groupfilter function='member' level='[none:body:nk]' member='&quot;Xtracab&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0icee4v1bvothx1g98rwz13ysb0i].[none:body:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0icee4v1bvothx1g98rwz13ysb0i].[sum:n:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0icee4v1bvothx1g98rwz13ysb0i].[none:body:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0icee4v1bvothx1g98rwz13ysb0i].[sum:n:qk]' scope='cols' value='Number of Listings' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0icee4v1bvothx1g98rwz13ysb0i].[none:body:nk]' value='39' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0icee4v1bvothx1g98rwz13ysb0i].[none:body:nk]</rows>
+        <cols>[federated.0icee4v1bvothx1g98rwz13ysb0i].[sum:n:qk]</cols>
+      </table>
+      <simple-id uuid='{95C72BA7-33DE-418B-874D-8E0141CD9DD5}' />
+    </worksheet>
+    <worksheet name='Condition – Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Toyota Vehicle Conditions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='condition_raw' name='federated.0oc4rin0chyyou1b3q53k0xphmgh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oc4rin0chyyou1b3q53k0xphmgh'>
+            <column-instance column='[__tableau_internal_object_id__].[condition_raw.csv_B4B024C2B27242ED86C0AB6C69994DBC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:condition_raw.csv_B4B024C2B27242ED86C0AB6C69994DBC:qk]' pivot='key' type='quantitative' />
+            <column caption='condition_raw.csv' datatype='table' name='[__tableau_internal_object_id__].[condition_raw.csv_B4B024C2B27242ED86C0AB6C69994DBC]' role='measure' type='quantitative' />
+            <column caption='Condition' datatype='integer' datatype-customized='true' name='[condition]' role='dimension' type='ordinal' />
+            <column-instance column='[condition]' derivation='None' name='[none:condition:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oc4rin0chyyou1b3q53k0xphmgh].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0oc4rin0chyyou1b3q53k0xphmgh].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0oc4rin0chyyou1b3q53k0xphmgh].[Multiple Values]' scope='rows' value='Count' />
+            <encoding attr='space' class='0' field='[federated.0oc4rin0chyyou1b3q53k0xphmgh].[none:condition:qk]' field-type='quantitative' major-origin='0' major-spacing='10' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.2963535785675049' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='641' />
+                <format attr='maxheight' value='641' />
+                <format attr='minwidth' value='820' />
+                <format attr='maxwidth' value='820' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oc4rin0chyyou1b3q53k0xphmgh].[Multiple Values]</rows>
+        <cols>[federated.0oc4rin0chyyou1b3q53k0xphmgh].[none:condition:qk]</cols>
+      </table>
+      <simple-id uuid='{A5AABE78-5187-4931-80E4-AD1830865037}' />
+    </worksheet>
+    <worksheet name='Geography – Avg Price by State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Toyota Selling Price by State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avg_price_by_state' name='federated.19zj9fc0thxqms1ccbv9r18fau54' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.19zj9fc0thxqms1ccbv9r18fau54'>
+            <column caption='Avg Price' datatype='real' default-format='c&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' name='[avg_price]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[avg_price]' derivation='Sum' name='[sum:avg_price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19zj9fc0thxqms1ccbv9r18fau54].[none:state:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;az&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;ca&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;co&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;fl&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;ga&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;hi&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;il&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;in&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;la&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;ma&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;md&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;mi&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;mn&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;mo&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;ms&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;nc&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;ne&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;nj&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;nv&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;ny&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;oh&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;or&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;pa&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;sc&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;tn&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;tx&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;ut&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;va&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;wa&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;wi&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.19zj9fc0thxqms1ccbv9r18fau54].[none:state:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.19zj9fc0thxqms1ccbv9r18fau54].[sum:avg_price:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.19zj9fc0thxqms1ccbv9r18fau54].[none:state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19zj9fc0thxqms1ccbv9r18fau54].[none:state:nk]</rows>
+        <cols>[federated.19zj9fc0thxqms1ccbv9r18fau54].[sum:avg_price:qk]</cols>
+      </table>
+      <simple-id uuid='{1CFE8CDC-FDC2-4B57-A8C3-06FE6CE4EA52}' />
+    </worksheet>
+    <worksheet name='Models – Top 10 Sold'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000'>Top 10 Toyota Models by Listings</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='top_models' name='federated.0q5cz5405sbxla19jnggt07687de' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q5cz5405sbxla19jnggt07687de'>
+            <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
+            <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+            <column-instance column='[model]' derivation='None' name='[none:model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n]' derivation='Sum' name='[sum:n:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0q5cz5405sbxla19jnggt07687de].[none:model:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0q5cz5405sbxla19jnggt07687de].[sum:n:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0q5cz5405sbxla19jnggt07687de].[sum:n:qk]' scope='cols' value='Number of Listings' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0q5cz5405sbxla19jnggt07687de].[none:model:nk]' value='45' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q5cz5405sbxla19jnggt07687de].[none:model:nk]</rows>
+        <cols>[federated.0q5cz5405sbxla19jnggt07687de].[sum:n:qk]</cols>
+      </table>
+      <simple-id uuid='{0639D491-1472-464B-B5DB-9DB69008BB7D}' />
+    </worksheet>
+    <worksheet name='Price Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Average Toyota Selling Price Over Time (500 + Listings)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avg_price_over_time' name='federated.13nirr30e6u8tn146vy2a0z16ume' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13nirr30e6u8tn146vy2a0z16ume'>
+            <column-instance column='[avg_price]' derivation='Avg' name='[avg:avg_price:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Price' datatype='real' name='[avg_price]' role='measure' type='quantitative' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]' included-values='all' />
+          <slices>
+            <column>[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13nirr30e6u8tn146vy2a0z16ume].[avg:avg_price:qk]' field-type='quantitative' max='13100.0' min='11500.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.13nirr30e6u8tn146vy2a0z16ume].[avg:avg_price:qk]' scope='rows' value='Average Selling Price ($)' />
+            <encoding attr='space' class='0' field='[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]' field-type='quantitative' major-origin='#2015-03-02#' major-spacing='1.0' major-units='months' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]' value='' />
+            <format attr='text-format' field='[federated.13nirr30e6u8tn146vy2a0z16ume].[avg:avg_price:qk]' value='C1033%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]' value='*mmmm yyyy' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]' value='Year/Month'>
+              <formatted-text>
+                <run>Year/Month</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13nirr30e6u8tn146vy2a0z16ume].[avg:avg_price:qk]</rows>
+        <cols>[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]</cols>
+      </table>
+      <simple-id uuid='{8E2C3B25-6D5A-4602-AFA3-F57C9699A151}' />
+    </worksheet>
+    <worksheet name='Price by Body – Boxplot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Price Distribution by Body Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='price_by_body_raw' name='federated.1duxn0t15164qv155e5tm1wi9bue' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1duxn0t15164qv155e5tm1wi9bue'>
+            <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+            <column-instance column='[body]' derivation='None' name='[none:body:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sellingprice]' derivation='None' name='[none:sellingprice:qk]' pivot='key' type='quantitative' />
+            <column caption='Sellingprice' datatype='integer' name='[sellingprice]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1duxn0t15164qv155e5tm1wi9bue].[none:sellingprice:qk]' scope='cols' value='Selling Price ($)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1duxn0t15164qv155e5tm1wi9bue].[none:body:nk]' value='36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <reference-line axis-column='[federated.1duxn0t15164qv155e5tm1wi9bue].[none:sellingprice:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1duxn0t15164qv155e5tm1wi9bue].[none:sellingprice:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.38381215929985046' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1duxn0t15164qv155e5tm1wi9bue].[none:body:nk]</rows>
+        <cols>[federated.1duxn0t15164qv155e5tm1wi9bue].[none:sellingprice:qk]</cols>
+      </table>
+      <simple-id uuid='{836BB9ED-2EC7-4BBD-BF6D-BC278FB580AC}' />
+    </worksheet>
+    <worksheet name='Price vs Odometer'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000'>Selling Price vs. Odometer ( ≤ 300k miles)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='price_vs_odometer' name='federated.0mghwcs16pszro17lokwf19ajzes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mghwcs16pszro17lokwf19ajzes'>
+            <column-instance column='[odometer]' derivation='None' name='[none:odometer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sellingprice]' derivation='None' name='[none:sellingprice:qk]' pivot='key' type='quantitative' />
+            <column caption='Odometer' datatype='integer' name='[odometer]' role='measure' type='quantitative' />
+            <column caption='Sellingprice' datatype='integer' name='[sellingprice]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0mghwcs16pszro17lokwf19ajzes].[none:sellingprice:qk]' scope='rows' value='Selling Price ($)' />
+            <format attr='title' class='0' field='[federated.0mghwcs16pszro17lokwf19ajzes].[none:odometer:qk]' scope='cols' value='Odometer (miles)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='129' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mghwcs16pszro17lokwf19ajzes].[none:sellingprice:qk]</rows>
+        <cols>[federated.0mghwcs16pszro17lokwf19ajzes].[none:odometer:qk]</cols>
+      </table>
+      <simple-id uuid='{EFF241D2-45E4-49EB-B639-77D99A7EF01D}' />
+    </worksheet>
+    <worksheet name='Segmentation – Scatter'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Cluster Segmentation: Price vs Odometer</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clusters_rowlevel' name='federated.1imy4s20281bid13aj6cj0fkxyxn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1imy4s20281bid13aj6cj0fkxyxn'>
+            <column caption='Cluster' datatype='integer' name='[cluster]' role='measure' type='quantitative' />
+            <column-instance column='[odometer]' derivation='None' name='[none:odometer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sellingprice]' derivation='None' name='[none:sellingprice:qk]' pivot='key' type='quantitative' />
+            <column caption='Odometer' datatype='integer' name='[odometer]' role='measure' type='quantitative' />
+            <column caption='Sellingprice' datatype='integer' name='[sellingprice]' role='measure' type='quantitative' />
+            <column-instance column='[cluster]' derivation='Sum' name='[sum:cluster:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1imy4s20281bid13aj6cj0fkxyxn].[none:sellingprice:qk]' scope='rows' value='Selling Price' />
+            <encoding attr='space' class='0' field='[federated.1imy4s20281bid13aj6cj0fkxyxn].[none:odometer:qk]' field-type='quantitative' max='400000' min='0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1imy4s20281bid13aj6cj0fkxyxn].[sum:cluster:qk]' max='3' min='1' num-steps='3' palette='blue_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1imy4s20281bid13aj6cj0fkxyxn].[sum:cluster:qk]' value='Cluster'>
+              <formatted-text>
+                <run>Cluster</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1imy4s20281bid13aj6cj0fkxyxn].[sum:cluster:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.31784531474113464' />
+                <format attr='mark-transparency' value='103' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1imy4s20281bid13aj6cj0fkxyxn].[none:sellingprice:qk]</rows>
+        <cols>[federated.1imy4s20281bid13aj6cj0fkxyxn].[none:odometer:qk]</cols>
+      </table>
+      <simple-id uuid='{C45468E8-CE3A-43EF-93D0-3613F0C97A46}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Used Toyota Market Analysis'>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='text-align' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='2000' maxwidth='1500' minheight='2000' minwidth='1500' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='body_type_counts' name='federated.0icee4v1bvothx1g98rwz13ysb0i' />
+        <datasource caption='avg_price_over_time' name='federated.13nirr30e6u8tn146vy2a0z16ume' />
+        <datasource caption='avg_price_by_state' name='federated.19zj9fc0thxqms1ccbv9r18fau54' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0icee4v1bvothx1g98rwz13ysb0i'>
+        <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+        <column-instance column='[body]' derivation='None' name='[none:body:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.13nirr30e6u8tn146vy2a0z16ume'>
+        <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+        <column-instance column='[month]' derivation='None' name='[none:month:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.19zj9fc0thxqms1ccbv9r18fau54'>
+        <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+        <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='99200' id='9' param='vert' type-v2='layout-flow' w='98934' x='533' y='400'>
+            <zone h='2100' id='10' type-v2='title' w='98934' x='533' y='400'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='4313' id='11' param='horz' type-v2='layout-flow' w='38000' x='30400' y='3750'>
+          <zone h='4313' id='13' mode='checkdropdown' name='Geography – Avg Price by State' param='[federated.19zj9fc0thxqms1ccbv9r18fau54].[none:state:nk]' type-v2='filter' w='11200' x='30400' y='3750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='4313' id='15' mode='checkdropdown' name='Body Types – Listings' param='[federated.0icee4v1bvothx1g98rwz13ysb0i].[none:body:nk]' type-v2='filter' w='11200' x='41600' y='3750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='4313' id='17' name='Price Over Time' param='[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='15600' x='52800' y='3750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='20500' id='12' name='Geography – Avg Price by State' w='82267' x='7467' y='7900' />
+        <zone h='42200' id='22' param='vert' type-v2='layout-flow' w='33333' x='7467' y='29000'>
+          <zone h='14066' id='18' name='Models – Top 10 Sold' w='33333' x='7467' y='29000'>
+            <layout-cache fixed-size-h='568' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='14066' id='14' name='Body Types – Listings' w='33333' x='7467' y='43066'>
+            <layout-cache fixed-size-h='664' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='14068' id='19' name='Condition – Distribution' w='33333' x='7467' y='57132'>
+            <layout-cache has-max-size-h='true' maxheight='739' minheight='739' type-h='scalable' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='42700' id='23' param='vert' type-v2='layout-flow' w='33333' x='56067' y='28600'>
+          <zone fixed-size='274' h='14100' id='20' is-fixed='true' name='Price vs Odometer' w='33333' x='56067' y='28600'>
+            <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='265' h='13650' id='21' is-fixed='true' name='Price by Body – Boxplot' w='33333' x='56067' y='42700'>
+            <layout-cache type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='14950' id='16' name='Price Over Time' w='33333' x='56067' y='56350'>
+            <layout-cache minheight='193' type-h='scalable' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='24900' id='24' name='Segmentation – Scatter' w='64600' x='16800' y='71700'>
+          <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+        </zone>
+        <zone fixed-size='56' h='3800' id='25' is-fixed='true' name='Segmentation – Scatter' pane-specification-id='0' param='[federated.1imy4s20281bid13aj6cj0fkxyxn].[sum:cluster:qk]' type-v2='color' w='9333' x='71400' y='71650' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A81FD2DF-C578-4EF0-A470-F6F6087413CD}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='177'>
+    <window class='worksheet' name='Geography – Avg Price by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.19zj9fc0thxqms1ccbv9r18fau54].[none:state:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{912FCB38-6406-414F-8215-A701CFF94455}' />
+    </window>
+    <window class='worksheet' name='Models – Top 10 Sold'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C62449D5-839E-4A6E-BEF2-5C89F171E4BA}' />
+    </window>
+    <window class='worksheet' name='Body Types – Listings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.0icee4v1bvothx1g98rwz13ysb0i].[none:body:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EDE43135-FFC4-47F3-9136-91DC23136BE2}' />
+    </window>
+    <window class='worksheet' name='Price vs Odometer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4406A8F0-4FA9-40D2-9BDB-803C208F4D71}' />
+    </window>
+    <window class='worksheet' name='Price Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='230'>
+            <card param='[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BCA705E7-204B-4DC5-A2C0-553C7FD1AD9C}' />
+    </window>
+    <window class='worksheet' name='Condition – Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='135'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9415253B-C9B7-4710-9843-BAF6055EA9CF}' />
+    </window>
+    <window class='worksheet' name='Price by Body – Boxplot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8DB86EA0-392C-4689-88B0-64B61675526D}' />
+    </window>
+    <window class='worksheet' name='Segmentation – Scatter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1imy4s20281bid13aj6cj0fkxyxn].[sum:cluster:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{89EE7572-F760-4D13-9C6C-3383D7A3E8FF}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Used Toyota Market Analysis'>
+      <viewpoints>
+        <viewpoint name='Body Types – Listings' />
+        <viewpoint name='Condition – Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Geography – Avg Price by State' />
+        <viewpoint name='Models – Top 10 Sold' />
+        <viewpoint name='Price Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Price by Body – Boxplot' />
+        <viewpoint name='Price vs Odometer'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Segmentation – Scatter'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{F62C00BB-E615-4226-820B-25BB1DC4DECB}' />
+    </window>
+  </windows>
+</workbook>
