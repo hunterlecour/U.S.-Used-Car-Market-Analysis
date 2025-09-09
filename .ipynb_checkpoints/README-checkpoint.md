@@ -100,8 +100,8 @@ This project examined the U.S. used-Toyota vehicle market to:
 
 ## 5. Reproducibility
 - All analysis code is available in two forms:  
-  - `analysis.R` (original R script)  
-  - `analysis_notebook.ipynb` (Jupyter notebook with the same R code, using IRkernel).  
+  - `Final_Project_Official.R` (original R script)  
+  - `Used Car Market Analysis.ipynb` (Jupyter notebook with the same R code, using IRkernel).  
 - Visuals are reproduced in the notebook and expanded into a Tableau dashboard.  
 - Tableau Public dashboard link (interactive): [Used Toyota Market Analysis (Tableau Public)](https://public.tableau.com/app/profile/hunter.lecour/viz/UsedCarMarketAnalysis_17574407224210/UsedToyotaMarketAnalysis?publish=yes)  
 - To reproduce locally:  
