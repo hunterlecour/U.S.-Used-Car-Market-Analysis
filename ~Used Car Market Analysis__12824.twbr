@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20252.25.0818.1050                               -->
-<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -21,6 +21,7 @@
     <WorksheetBackgroundTransparency />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='UsedCarMarketAnalysis_17574407224210' path='/workbooks' revision='1.1' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -30,7 +31,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='avg_price_by_state' name='textscan.08z8zcm1hyxlku182m81109ndhv1'>
-            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='avg_price_by_state.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='avg_price_by_state.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.08z8zcm1hyxlku182m81109ndhv1' name='avg_price_by_state.csv' table='[avg_price_by_state#csv]' type='table'>
@@ -90,7 +91,7 @@
       <column caption='Avg Price' datatype='real' default-format='c&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' name='[avg_price]' role='measure' type='quantitative' />
       <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_0mrkwk91grmfz41b83ya30pvof2a.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:20:39 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_0mrkwk91grmfz41b83ya30pvof2a.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -149,7 +150,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='top_models' name='textscan.1drvrl604v8rzp1argyjk0y8ht81'>
-            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='top_models.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='top_models.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.1drvrl604v8rzp1argyjk0y8ht81' name='top_models.csv' table='[top_models#csv]' type='table'>
@@ -209,7 +210,7 @@
       <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
       <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_1jclo5r1x5i4u21girbmo1ekqpzf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:28:05 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_1jclo5r1x5i4u21girbmo1ekqpzf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -268,7 +269,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='body_type_counts' name='textscan.0ksr204137jhnf17h174z1oi01km'>
-            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='body_type_counts.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='body_type_counts.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0ksr204137jhnf17h174z1oi01km' name='body_type_counts.csv' table='[body_type_counts#csv]' type='table'>
@@ -328,7 +329,7 @@
       <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
       <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_08bh3bu1xoqnlx1deldrb16ihv4f.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:36:56 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_08bh3bu1xoqnlx1deldrb16ihv4f.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -387,7 +388,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='price_vs_odometer' name='textscan.0g7ookr15nzuzk1el4ksy03zqn7w'>
-            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='price_vs_odometer.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='price_vs_odometer.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0g7ookr15nzuzk1el4ksy03zqn7w' name='price_vs_odometer.csv' table='[price_vs_odometer#csv]' type='table'>
@@ -670,7 +671,7 @@
       <column caption='Vin' datatype='string' name='[vin]' role='dimension' type='nominal' />
       <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_0fyh2zh06749dy1alc2dq1l6fqej.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:44:18 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_0fyh2zh06749dy1alc2dq1l6fqej.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -934,7 +935,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='avg_price_over_time' name='textscan.1iv80gs1ca0d4i15p7csi0ck6wap'>
-            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='avg_price_over_time.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='avg_price_over_time.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.1iv80gs1ca0d4i15p7csi0ck6wap' name='avg_price_over_time.csv' table='[avg_price_over_time#csv]' type='table'>
@@ -991,7 +992,7 @@
       <column caption='Avg Price' datatype='real' name='[avg_price]' role='measure' type='quantitative' />
       <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_1b9zwux19n70yp1bo318q0khr5dr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 04:58:13 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_1b9zwux19n70yp1bo318q0khr5dr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -1049,7 +1050,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='condition_raw' name='textscan.1aqbolf0vy5poz1h50udi1rx6k5d'>
-            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='condition_raw.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='condition_raw.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.1aqbolf0vy5poz1h50udi1rx6k5d' name='condition_raw.csv' table='[condition_raw#csv]' type='table'>
@@ -1091,7 +1092,7 @@
       <column caption='condition_raw.csv' datatype='table' name='[__tableau_internal_object_id__].[condition_raw.csv_B4B024C2B27242ED86C0AB6C69994DBC]' role='measure' type='quantitative' />
       <column caption='Condition' datatype='integer' datatype-customized='true' name='[condition]' role='dimension' type='ordinal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_1japn9i0t1tlkx18tfspg09nw07m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 05:17:38 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_1japn9i0t1tlkx18tfspg09nw07m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -1135,7 +1136,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='price_by_body_raw' name='textscan.0n5ff5502c68ug110gyhn11vakyn'>
-            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='price_by_body_raw.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='price_by_body_raw.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0n5ff5502c68ug110gyhn11vakyn' name='price_by_body_raw.csv' table='[price_by_body_raw#csv]' type='table'>
@@ -1195,7 +1196,7 @@
       <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
       <column caption='Sellingprice' datatype='integer' name='[sellingprice]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_02aeo4f1wgx71i1eggzk00tma07g.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 05:32:46 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_02aeo4f1wgx71i1eggzk00tma07g.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -1254,7 +1255,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='clusters_rowlevel' name='textscan.1c4k5jy101x59k1aqk6d518dy46u'>
-            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='clusters_rowlevel.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/hunte/U.S. Used Car Market Analysis/exports' filename='clusters_rowlevel.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.1c4k5jy101x59k1aqk6d518dy46u' name='clusters_rowlevel.csv' table='[clusters_rowlevel#csv]' type='table'>
@@ -1404,7 +1405,7 @@
       <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_07qy8no0etxt0d1d70pff0doz6bx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2025 05:33:48 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hunte/AppData/Local/Temp/TableauTemp/#TableauTemp_07qy8no0etxt0d1d70pff0doz6bx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -1419,7 +1420,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>37</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>odometer</remote-name>
@@ -1433,7 +1433,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>30926</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>sellingprice</remote-name>
@@ -1447,7 +1446,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>847</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>condition</remote-name>
@@ -1461,7 +1459,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>38</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>body</remote-name>
@@ -1476,7 +1473,6 @@
               <approx-count>15</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>model</remote-name>
@@ -1491,7 +1487,6 @@
               <approx-count>44</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>state</remote-name>
@@ -1506,7 +1501,6 @@
               <approx-count>40</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>cluster</remote-name>
@@ -1520,7 +1514,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[clusters_rowlevel.csv_C5A5176777554AD08E894E52AACEE845]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -2203,10 +2196,135 @@
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <size maxheight='2600' minheight='2600' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99200' id='26' param='vert' type-v2='layout-flow' w='98934' x='533' y='400'>
+                <zone h='2100' id='10' type-v2='title' w='98934' x='533' y='400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4313' id='13' mode='checkdropdown' name='Geography – Avg Price by State' param='[federated.19zj9fc0thxqms1ccbv9r18fau54].[none:state:nk]' type-v2='filter' w='11200' x='30400' y='3750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='20500' id='12' is-fixed='true' name='Geography – Avg Price by State' w='82267' x='7467' y='7900'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='274' h='14100' id='20' is-fixed='true' name='Price vs Odometer' w='33333' x='56067' y='28600'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='14066' id='18' is-fixed='true' name='Models – Top 10 Sold' w='33333' x='7467' y='29000'>
+                  <layout-cache fixed-size-h='568' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='265' h='13650' id='21' is-fixed='true' name='Price by Body – Boxplot' w='33333' x='56067' y='42700'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4313' id='15' mode='checkdropdown' name='Body Types – Listings' param='[federated.0icee4v1bvothx1g98rwz13ysb0i].[none:body:nk]' type-v2='filter' w='11200' x='41600' y='3750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='274' h='14066' id='14' is-fixed='true' name='Body Types – Listings' w='33333' x='7467' y='43066'>
+                  <layout-cache fixed-size-h='664' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4313' id='17' name='Price Over Time' param='[federated.13nirr30e6u8tn146vy2a0z16ume].[none:month:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='15600' x='52800' y='3750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='14950' id='16' is-fixed='true' name='Price Over Time' w='33333' x='56067' y='56350'>
+                  <layout-cache minheight='193' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='14068' id='19' is-fixed='true' name='Condition – Distribution' w='33333' x='7467' y='57132'>
+                  <layout-cache has-max-size-h='true' maxheight='739' minheight='739' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24900' id='24' is-fixed='true' name='Segmentation – Scatter' w='64600' x='16800' y='71700'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='56' h='3800' id='25' name='Segmentation – Scatter' pane-specification-id='0' param='[federated.1imy4s20281bid13aj6cj0fkxyxn].[sum:cluster:qk]' type-v2='color' w='9333' x='71400' y='71650'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -2445,7 +2563,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='10' />
+      <active id='12' />
       <simple-id uuid='{F62C00BB-E615-4226-820B-25BB1DC4DECB}' />
     </window>
   </windows>
